@@ -2,12 +2,12 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 const Mojtaba = {
-  Name : 'Mojtaba',
+  Name : 'Mojtaba Bagheri Chenari',
   Job : 'Developer',
-  Website : 'www.koosbazi.com',
-  Email : 'mojibc1377@gmail.com',
-  About : 'I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.',
-  Intrests : 'Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.'
+  Website : 'www.github.com/mojibc1377',
+  Email : 'mojtaba.bagherich@gmail.com',
+  About : 'I am a developer with a particular interest in making things simple and automating daily tasks. I try to keep up with data science and best practices, and am always looking for new things to learn.',
+  Intrests : 'Food expert. Basketball player. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.'
 };
 function App() {
   return (
@@ -17,8 +17,10 @@ function App() {
       <h2 className='Job'>{Mojtaba.Job}</h2>
       <h3 className='WebSite'>{Mojtaba.Website}</h3>
       <div className='btn'>
-        <button id='Email'>Email</button>
-        <button id='linkedIn'>LinkedIn</button>
+        <button id='Email'>
+          <a href="mailto:mojibc1377@gmail.com?body=My custom mail body" color='black'>E-Mail</a>
+        </button>
+        
       </div>
       <div>
         <header className='header'>About</header>
