@@ -1,6 +1,5 @@
 .Pp{
   border-radius: 10px 10px 0px 0px;
-  border: 2px solid;
   align-items: center;
   text-align: center;
 }
@@ -46,6 +45,10 @@
   border-color: #5093E2;
   margin-right: 10px;
 }
+#Email:hover{
+  background-color: #5093E2;
+  size: 120%;
+}
 #linkedIn{
   background-color: #5093E2;
   width: 115px;
@@ -84,6 +87,17 @@
 .instagram{
   width: 48px;
   height: 48px;
+}
+.phone{
+  width: 48px;
+  height: 48px;
+}
+a {
+  color: black;
+}
+a:hover {
+   font-size: large;
+   color: #00F
 }
 
 
