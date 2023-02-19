@@ -3,7 +3,6 @@ import * as React from 'react';
 import {MdOutlineExpandMore} from 'react-icons/md'
 import {MdOutlineExpandLess} from 'react-icons/md'
 import Navbar from "./navbar";
-import Footer from "../Footer";
 const Mojtaba = {
   Name : 'Mojtaba Bagheri Chenari',
   Job : 'Front-end WebDeveloper',
@@ -33,7 +32,7 @@ function Card() {
           <button id='Email'>Email<HiMail className="icon"/></button>
           </a>
       </div>
-      <Navbar/>
+      
       <div className="info-part">
       </div>
       {more ===true && 
@@ -49,7 +48,9 @@ function Card() {
       
 }
       {more === false ? <MdOutlineExpandMore className="more-btn" onClick={flipper}/> : <MdOutlineExpandLess className="more-btn" onClick={flipper}/>}
+      <Navbar/>
     </div>
+
     
   );
 }
