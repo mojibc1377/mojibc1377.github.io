@@ -1,11 +1,16 @@
+.App::-webkit-scrollbar{
+  display: none;
+ 
+}
 .Pp{
   border-radius: 10px 10px 0px 0px;
   align-items: center;
   text-align: center;
-  width: fit-content;
+  width: 350px;
 }
-.info-box{
-  display: grid;
+.Apps{
+  display: flexbox;
+  flex-direction: column;
   margin: auto;
   position: center;
   color: whitesmoke;
@@ -15,42 +20,63 @@
   box-shadow:  3px 0px 0.8rem #66a6e6;
   text-align: center;
   letter-spacing: -0.05em;
-  max-width: fit-content;
+  max-width: max-content;
   border-radius: 10px 10px 10px 10px;
-
+  width: 350px;
+  height: 100%;
+  overflow-x: hidden;
+}
+#list::-webkit-scrollbar{
+  display: none;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+  overflow: hidden;
+}
+pre::-webkit-scrollbar{
+  display: none;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+  overflow: hidden;
 }
 #root{
   display: grid;
 }
 .Name{
   font-weight: 300;
+  height: 40px;
   font-size: 2rem; 
   line-height: 30.26px;
-  margin-bottom:0 ;
+  margin-bottom: 0;
+  margin-top: 10px;
   
 }
 .Job{
   color: #5093E2;
   font-weight: 400;
   font-size: 12.8px;
+  align-self: center;
+  margin-top: 0;
 }
-.WebSite{
-  font-weight: 400;
-  font-size: 10.24px;
-}
+
 #Email{
   position: relative;
+  display: flex ;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+
   background-color: #FFFFFF;
   width: 115px;
   border-radius: 6px;
-  padding: 7px 5px 9px 13px;
+  padding: 9px 10px 7px 17px;
+  margin-bottom: 10px;
   color: black;
   font-size: 1.2rem;
   border: 2px solid;
   border-color: #5093E2;
   margin-right: 10px;
   list-style: none;
-  
+  margin-top: 0;
 }
 #Email:hover > .icon{
   background-color: #5093E2;
@@ -62,9 +88,6 @@
   color: aliceblue;
   
 }
-
-
-
 .header{
   text-align: left;
   padding-top: 20px;
@@ -80,19 +103,24 @@
 }
 pre{
   text-align: center;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.04em;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    width: 200;
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-bottom: 0;
 }
 .footer{
-  display: flexbox;
-  flex-direction: row;
   background-color: #161619;
   border-radius: 10px;
-  margin: 0; 
-  justify-content: space-between;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 350px;
+  position: relative;
+
 }
 .git{
   width: 48px;
@@ -104,9 +132,8 @@ pre{
   
 }
 .instagram{
-  width: 40px;
-  height: 40px;
-  padding-bottom: 4px;
+  width: 45px;
+  height: 41px;
 }
 
 a {
@@ -115,11 +142,10 @@ a {
 }
 .icon{
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: black;
-  align-self: center;
-  padding-left: 10px;
-  top:5px;
+  left: 2px;
+  
 
 }
 
@@ -129,15 +155,64 @@ a {
 }
 .more-btn{
   font-size: 2.3rem;
-  position: relative;
-  left: 45%;
+  color: #5093E2;
+  transition: 800ms;
+}
+.less-btn{
+  font-size: 2.3rem;
   color: #5093E2;
 }
-.lessInfo{
-  visibility:hidden;
-  position: relative;
-  bottom: 2000px;
-}
+
+
 .moreInformation{
-  transition: 8000ms ease-in-out;
+  
+  max-width: 280px;
+  position: relative;
+  left:20px;
+  align-content: start;
+  text-align: left;
+}
+#list{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-inline: 20px;
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  position: relative;
+
+  /* So the width will be 100% + 17px */
+}
+a{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+li{
+  border: 3px solid;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #161619;
+}
+ul > li.active{
+  color: white;
+  background-color: #5093E2;
+}
+.info-part{
+  position: inherit;
+}
+.cert-image{
+  width: 250px;
+  margin: 10px 0px;
+  position: relative;
+  left: 20px;
+  margin-right: 30%;
+}
+
+.badgel{
+  width: 60px;
+  margin-inline: 20px;
 }

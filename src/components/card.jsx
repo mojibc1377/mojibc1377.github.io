@@ -1,17 +1,18 @@
-import Footer from "../Footer";
 import {HiMail} from "react-icons/hi"
 import * as React from 'react';
 import {MdOutlineExpandMore} from 'react-icons/md'
 import {MdOutlineExpandLess} from 'react-icons/md'
+import Navbar from "./navbar";
+import Footer from "../Footer";
 const Mojtaba = {
   Name : 'Mojtaba Bagheri Chenari',
   Job : 'Front-end WebDeveloper',
   Email : 'mojtaba.bagherich@gmail.com',
-  About : 'I am a developer with a particular interest in making things simple and automating daily tasks. i was born in 1998 & I try to keep up with data science and best practices, and am always looking for new things to learn. i have some expriences in data related jobs with several data science certificates from IBM and for my projects you can visit my github',
-  Intrests : 'Food expert. Basketball player. Reader. Internet fanatic. Travel geek. Coffee fanatic. Football. surfing the internet. Taking a walk.',
-  Studies:'Currently studying computer science in azad islamic University Guilan',
+  About : '',
+  Intrests : '',
+  Studies:'',
   LanguageKnowledge :'- German \n- English \n- Farsi ( Mother Language)',
-  cert:'- Data Science Methodology\n- Tools for Data Science\n- Python for Data Science & AI developing\n- Databases und SQL for Data Science with Python',
+  cert:'- Data Science Methodology\n- Tools for Data Science\n- Python for Data Science & AI developing\n- Databases & SQL for DataScience with Python',
 
 };
 
@@ -23,7 +24,7 @@ function Card() {
     )
   }
   return (
-    <div className="info-box">
+    <div className="App">
       <img className='Pp' src='/image/Screen Shot 1400-09-28 at 20.15.36.jpg' alt="profile"/>
       <pre className='Name'>{Mojtaba.Name}</pre>
       <h2 className='Job'>{Mojtaba.Job}</h2>
@@ -32,34 +33,22 @@ function Card() {
           <button id='Email'>Email<HiMail className="icon"/></button>
           </a>
       </div>
-      <div>
-        <header className='header'>About</header>
-          <p className='about'>{Mojtaba.About}</p>
+      <Navbar/>
+      <div className="info-part">
       </div>
       {more ===true && 
-        <div className="moreInformation">
-          <div>
-        <header className='header'>Intrests</header>
-        <p className='about'>{Mojtaba.Intrests}</p>
-      </div>
-      <div>
-        <header className='header'>Studies</header>
-          <p className='about'>{Mojtaba.Studies}</p>
-      </div>
-      <div>
-        <header className='header'>Languages</header>
-          <pre className='about' >{Mojtaba.LanguageKnowledge}</pre>
-      </div>
+        <div className="moreInformation">Ladies and Gentlemen
+        Are you looking for a constructive and trusting trainee in the IT sector, preferably as a data analyst, who has a great affinity for computer science and mathematics and already has many years of experience in the IT sector? Then we should get to know each other personally.
+        For many years I have been able to independently gain experience in a wide range of IT areas at various companies. I can also fall back on studying computer science in my home country. I am convinced that my professional experience is an ideal prerequisite for an apprenticeship with you and I would very much like to contribute my knowledge and my commitment to the IT area in your company.
+        I am resilient, I work with the necessary conscientiousness, perseverance and empathy. My perseverance, my strong will and my flexibility complete my overall package.
+        I am currently working intensively on expanding my German and English language skills in order to quickly gain a foothold in my new home country
+        Therefore, I see myself capable of successfully completing this demanding training in a future-oriented company like yours.
+        
+        Have I piqued your interest? I would be happy to introduce myself to you personally in an interview.
+        Best regards</div>  
       
-      <div>
-        <header className='header'>Certificates</header>
-          <pre className='about'>{Mojtaba.cert}</pre>
-      </div>
-      </div>  
-      }
+}
       {more === false ? <MdOutlineExpandMore className="more-btn" onClick={flipper}/> : <MdOutlineExpandLess className="more-btn" onClick={flipper}/>}
-      
-      <Footer/>
     </div>
     
   );
