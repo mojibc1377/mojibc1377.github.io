@@ -18,6 +18,7 @@ function Navbar(){
                     <CustomLink to='/certificate'>certificates</CustomLink>
                     
                     <CustomLink to='/badge'>Badges</CustomLink>
+
                 </ul>
             </nav>
     )

@@ -7,12 +7,7 @@ const Mojtaba = {
   Name : 'Mojtaba Bagheri Chenari',
   Job : 'Front-end WebDeveloper',
   Email : 'mojtaba.bagherich@gmail.com',
-  About : '',
-  Intrests : '',
-  Studies:'',
   LanguageKnowledge :'- German \n- English \n- Farsi ( Mother Language)',
-  cert:'- Data Science Methodology\n- Tools for Data Science\n- Python for Data Science & AI developing\n- Databases & SQL for DataScience with Python',
-
 };
 
 function Card() {

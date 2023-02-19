@@ -10,7 +10,6 @@ import Card from './components/card';
 import Badges from './pages/Badges';
 
 
-
 function App() {
   return (
     <div className='Apps'>
