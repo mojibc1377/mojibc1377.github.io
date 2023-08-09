@@ -18,7 +18,7 @@ function Card() {
     )
   }
   return (
-    <div className="App">
+    <div className="App flex flex-col">
       <img className='Pp' src='/image/Screen Shot 1400-09-28 at 20.15.36.jpg' alt="profile"/>
       <pre className='Name'>{Mojtaba.Name}</pre>
       <h2 className='Job'>{Mojtaba.Job}</h2>
@@ -52,7 +52,7 @@ function Card() {
         Best regards</div>  
       
 }
-      {more === false ? <MdOutlineExpandMore className="more-btn" onClick={flipper}/> : <MdOutlineExpandLess className="more-btn" onClick={flipper}/>}
+      {more === false ? <MdOutlineExpandMore className="more-btn left-1/2" onClick={flipper}/> : <MdOutlineExpandLess className="more-btn left-1/2" onClick={flipper}/>}
       <Navbar/>
     </div>
 

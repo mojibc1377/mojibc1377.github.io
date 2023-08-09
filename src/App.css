@@ -14,7 +14,6 @@
   margin: auto;
   position: center;
   color: whitesmoke;
-  border-width: 5px;
   align-items: center;
   background-color: #1A1B21;
   box-shadow:  3px 0px 0.8rem #66a6e6;
@@ -40,11 +39,13 @@ pre::-webkit-scrollbar{
 }
 #root{
   display: grid;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 .Name{
-  font-weight: 300;
+  font-weight: 200;
   height: 40px;
-  font-size: 2rem; 
+  font-size: 1.4rem; 
   line-height: 30.26px;
   margin-bottom: 0;
   margin-top: 10px;
@@ -74,9 +75,8 @@ pre::-webkit-scrollbar{
   font-size: 1.2rem;
   border: 2px solid;
   border-color: #5093E2;
-  margin-right: 10px;
   list-style: none;
-  margin-top: 0;
+  margin-top: 5px;
 }
 #Email:hover > .icon{
   background-color: #5093E2;
@@ -97,9 +97,10 @@ pre::-webkit-scrollbar{
 }
 .about{
   text-align: left;
-  margin-left: 35px;
+  margin-left: 20px;
   letter-spacing: -0.06em;
   max-width: 280px;
+  margin-bottom: 20px;
 }
 pre{
   text-align: center;
@@ -151,26 +152,27 @@ a {
 
 .btn{
   align-items: center;
+  align-self: center;
 
 }
 .more-btn{
   font-size: 2.3rem;
   color: #5093E2;
-  transition: 800ms;
   margin-bottom: 20px;
+  align-self: center;
 }
 .less-btn{
   font-size: 2.3rem;
   color: #5093E2;
   margin-bottom: 20px;
+  align-self: center;
 }
 
 
 .moreInformation{
-  
   max-width: 280px;
   position: relative;
-  left:35px;
+  align-self: center;
   align-content: start;
   text-align: center;
 }
@@ -211,9 +213,7 @@ ul > li.active{
 ul li a:hover {
   color: white; /* You can keep the same color or set it to the desired color */
 }
-.info-part{
-  position: inherit;
-}
+
 .cert-image{
   width: 250px;
   margin: 10px 0px;
@@ -242,6 +242,7 @@ ul li a:hover {
 .loading-placeholder {
   width: 250px;
   background-color: #b9cad8;
+  opacity: 100%;
   border-radius: 9px;
   animation: loadingAnimation 4s linear infinite;
 }
@@ -259,5 +260,4 @@ ul li a:hover {
 }
 .image-loaded{
   opacity: 1;
-  border-radius: 15px;
 }
