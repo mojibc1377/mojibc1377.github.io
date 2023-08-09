@@ -6,7 +6,7 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 function Navbar(){
 
     return(
-            <nav className="nav" >
+            <nav className="nav mb-3" >
                 <ul id="list">
                     
                     <CustomLink to='/about'>about</CustomLink>
