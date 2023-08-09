@@ -8,6 +8,7 @@ import Certificates from './pages/certificates';
 import Home from './pages/Home';
 import Card from './components/card';
 import Badges from './pages/Badges';
+import PDFPreview from './pages/pdf';
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         <Route path='/certificate' element={<Certificates/>}/>
         <Route path='/study' element={<Studies/>}/>
         <Route path='/badge' element={<Badges/>}/>
+        <Route path='/pdfresume' element={<PDFPreview/>}/>
+
       </Routes>
       <Footer/>
     </div>

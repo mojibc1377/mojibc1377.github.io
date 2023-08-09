@@ -9,15 +9,18 @@ function Navbar(){
             <nav className="nav mb-3" >
                 <ul id="list">
                     
-                    <CustomLink to='/about'>about</CustomLink>
+                    <CustomLink to='/about'>About</CustomLink>
 
-                    <CustomLink to='/intrest'>intrests</CustomLink>
+                    <CustomLink to='/intrest'>Intrests</CustomLink>
 
-                    <CustomLink to='/study'>studies</CustomLink>
+                    <CustomLink to='/study'>Studies</CustomLink>
 
-                    <CustomLink to='/certificate'>certificates</CustomLink>
+                    <CustomLink to='/certificate'>Certificates</CustomLink>
                     
                     <CustomLink to='/badge'>Badges</CustomLink>
+
+                    <CustomLink to='/pdfresume'>PDF</CustomLink>
+
 
                 </ul>
             </nav>
