@@ -5,7 +5,7 @@ import {MdOutlineExpandLess} from 'react-icons/md'
 import Navbar from "./navbar";
 const Mojtaba = {
   Name : 'Mojtaba Bagheri Chenari',
-  Job : 'Front-end WebDeveloper',
+  Job : 'JR Full-Stack WebDeveloper',
   Email : 'mojtaba.bagherich@gmail.com',
   LanguageKnowledge :'- German \n- English \n- Farsi ( Mother Language)',
 };
@@ -31,14 +31,24 @@ function Card() {
       <div className="info-part">
       </div>
       {more ===true && 
-        <div className="moreInformation">Ladies and Gentlemen
-        Are you looking for a constructive and trusting trainee in the IT sector, preferably as a data analyst, who has a great affinity for computer science and mathematics and already has many years of experience in the IT sector? Then we should get to know each other personally.
+        <div className="moreInformation">Ladies and Gentlemen<br/>
+        Are you looking for a constructive and trusting trainee in the IT sector, preferably as a data analyst or webDeveloper, who has a great affinity for computer science and mathematics and already has many years of experience in the IT sector?
+        <br/>
+        Then we should get to know each other personally.<br/>
         For many years I have been able to independently gain experience in a wide range of IT areas at various companies. I can also fall back on studying computer science in my home country. I am convinced that my professional experience is an ideal prerequisite for an apprenticeship with you and I would very much like to contribute my knowledge and my commitment to the IT area in your company.
-        I am resilient, I work with the necessary conscientiousness, perseverance and empathy. My perseverance, my strong will and my flexibility complete my overall package.
-        I am currently working intensively on expanding my German and English language skills in order to quickly gain a foothold in my new home country
-        Therefore, I see myself capable of successfully completing this demanding training in a future-oriented company like yours.
         
-        Have I piqued your interest? I would be happy to introduce myself to you personally in an interview.
+        <br/>
+        I am resilient, I work with the necessary conscientiousness, perseverance and empathy. My perseverance, my strong will and my flexibility complete my overall package.
+        <br/>
+        I am currently working intensively on expanding my German and English language skills in order to quickly gain a foothold in my new home country
+        <br/>
+        i also am trying to become a full-stack web developer with learning of Node.js<br/>
+        Therefore, I see myself capable of successfully completing this demanding training in a future-oriented company like yours.
+        <br/>
+
+        Have I piqued your interest?
+        <br/> I would be happy to introduce myself to you personally in an interview.
+        <br/>
         Best regards</div>  
       
 }
