@@ -23,7 +23,6 @@ function App() {
         <Route path='/study' element={<Studies/>}/>
         <Route path='/badge' element={<Badges/>}/>
         <Route path='/pdfresume' element={<PDFPreview/>}/>
-
       </Routes>
       <Footer/>
     </div>
